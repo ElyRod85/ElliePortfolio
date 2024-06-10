@@ -1,0 +1,186 @@
+main {
+  margin: 150px auto;
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin: 120px auto;
+  }
+}
+main .cv {
+  width: 90%;
+  margin: 50px auto 0 auto;
+  min-height: 60vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  main .cv {
+    width: 90%;
+  }
+}
+main .cv .cv-intro {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+main .cv h1, main .cv h2, main .cv h3 {
+  text-align: left;
+}
+main .cv h1, main .cv h2 {
+  margin: 0 auto 10px auto;
+}
+main .cv h3 {
+  margin: 30px auto 10px auto;
+}
+main .cv h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  main .cv h2 {
+    font-size: 24px;
+  }
+}
+main .cv h3 {
+  font-size: 26px;
+}
+@media screen and (max-width: 768px) {
+  main .cv h3 {
+    font-size: 22px;
+  }
+}
+main .cv p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+main .cv .skills-table {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@media screen and (max-width: 768px) {
+  main .cv .skills-table {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main .cv .skills-table .column {
+  width: 48%;
+}
+@media screen and (max-width: 768px) {
+  main .cv .skills-table .column {
+    width: 100%;
+  }
+}
+main .cv .exp {
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+main .cv ul {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  main .cv ul {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .cv ul li {
+    font-size: 18px;
+  }
+}
+main .cv p.skills-subtitle {
+  margin-top: 20px;
+}
+main .cv .cv-skills {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Print button */
+.print {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 50px auto;
+}
+.print button {
+  text-decoration: none;
+  line-height: 1.7;
+  font-weight: 600;
+  transition: 300ms;
+  display: block;
+  width: fit-content;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 20px;
+  padding: 8px 24px;
+  border-radius: var(--border-radius);
+  border: 4px solid var(--purple);
+}
+.print button:hover {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  border: 4px solid var(--dark-gray);
+}
+.print button i {
+  padding-left: 7px;
+}
+@media screen and (max-width: 768px) {
+  .print button {
+    font-size: 18px;
+  }
+}
+
+/* Print features */
+@media print {
+  header, footer, .print, img {
+    display: none;
+  }
+  #backButton {
+    color: transparent;
+  }
+  #backButton i {
+    background-color: transparent;
+    color: transparent;
+    border: 3px solid transparent;
+  }
+  #backButton i:hover {
+    background-color: transparent;
+    color: transparent;
+  }
+  main {
+    margin: 0 auto;
+  }
+  main .cv {
+    width: 80%;
+    margin: 40px auto;
+  }
+  main .cv h1 {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  main .cv h2 {
+    font-size: 22px;
+  }
+  main .cv h3 {
+    font-size: 20px;
+  }
+  main .cv p, main .cv ul, main .cv li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  main .cv .text-link {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=cv.css.map */
