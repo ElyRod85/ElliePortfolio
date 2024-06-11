@@ -33,7 +33,7 @@ section.container90 {
 }
 
 section.text-container {
-    width: 90%; margin: 0 auto 50px auto;
+    width: 80%; margin: 100px auto;
     display: flex; flex-flow: column wrap; justify-content: center; align-content: center;
     @media screen and (max-width: 1366px) { width: 90%; }
     p { font-size: 22px; text-align: center; line-height: 2;
@@ -43,38 +43,32 @@ section.text-container {
 }
 
 section.skill-box { 
-    width: 90%; margin: 50px auto ; 
+    width: 80%; margin: 20px auto; 
     display: flex; flex-flow: column wrap; justify-content: center; align-items: center; gap: 20px;
     @media screen and (max-width: 1366px) { width: 90%; }
 
     .skill-row {
-        width: 100%; margin: 50px auto;
+        width: 100%; margin: 70px auto; 
         display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;
-        @media screen and (max-width: 768px) { flex-flow: column wrap; justify-content: center; margin: 40px auto; }
-        &:first-of-type { margin: 0 auto 50px auto; 
-            @media screen and (max-width: 768px) { margin: 0 auto 30px auto; }
-        }
-        &:nth-of-type(2) { margin: 50px auto; 
-            @media screen and (max-width: 768px) { margin: 50px auto 30px auto;  }
-        }
-        &:last-of-type { margin: 50px auto 0 auto; }
-
-        .skill-img { width: 29%;
+        @media screen and (max-width: 768px) { flex-flow: column wrap; justify-content: center; margin: 60px auto; }
+        .skill-img { width: 28%;
             display: flex; justify-content: center;
             @media screen and (max-width: 768px) { width: 100%; }
             img { width: 100%; height: auto; padding: 0; margin: 0 auto; 
                 @media screen and (max-width: 768px) { width: 70%; }
             }
         }
-        .skill-contents { width: 69%;
+        .skill-contents { width: 68%;
             h2 { text-align: left; margin-top: 0; 
-                @media screen and (max-width: 768px) { text-align: center; margin-top: 20px; }
+                @media screen and (max-width: 768px) { text-align: center; margin-top: 50px; }
             }
+            p { margin: 30px 0 0 0; }
             .skill-techs {
                 width: 100%; background-color: var(--yellow); border-radius: var(--border-radius);
                 padding: 10px 20px; 
                 p { margin: 0; padding: 0; font-size: 18px; }
             }
+            
             @media screen and (max-width: 768px) { width: 100%; }
         }
     }
@@ -82,7 +76,7 @@ section.skill-box {
 }
 
 section.container-projects {
-    width: 90%; margin: 50px auto 0 auto; 
+    width: 80%; margin: 80px auto 0 auto; 
     display: flex; flex-flow: column wrap; justify-content: center; align-content: flex-start;
     h2 { text-align: center; margin: 0 auto 20px auto; }
     p { font-size: 22px; text-align: center; line-height: 2; margin: 0 auto 10px auto; 

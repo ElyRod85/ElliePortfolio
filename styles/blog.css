@@ -1,0 +1,48 @@
+main {
+  margin: 150px auto;
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin: 120px auto;
+  }
+}
+main .blog {
+  width: 90%;
+  margin: 50px auto 0 auto;
+  min-height: 60vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 830px) {
+  main .blog {
+    width: 90%;
+  }
+}
+main .blog .blog-intro {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+main .blog .blog-intro a {
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+main .blog .blog-intro h1 {
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+main .blog .blog-intro i {
+  padding-left: 0;
+  padding-right: 10px;
+}
+main .blog .blog-intro .img {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+main .blog .blog-intro .img img {
+  max-height: 40vh;
+  max-width: 100%;
+}/*# sourceMappingURL=blog.css.map */

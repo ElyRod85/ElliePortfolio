@@ -45,7 +45,7 @@ section.container-projects .previews {
   justify-content: space-between;
   align-content: flex-start;
   align-items: stretch;
-  gap: 80px 0;
+  gap: 150px 0;
 }
 @media screen and (max-width: 576px) {
   section.container-projects .previews {

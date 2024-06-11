@@ -89,8 +89,8 @@ section.container90 .header-text .cta-container {
 }
 
 section.text-container {
-  width: 90%;
-  margin: 0 auto 50px auto;
+  width: 80%;
+  margin: 100px auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -118,8 +118,8 @@ section.text-container p:last-of-type {
 }
 
 section.skill-box {
-  width: 90%;
-  margin: 50px auto;
+  width: 80%;
+  margin: 20px auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -133,7 +133,7 @@ section.skill-box {
 }
 section.skill-box .skill-row {
   width: 100%;
-  margin: 50px auto;
+  margin: 70px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -143,30 +143,11 @@ section.skill-box .skill-row {
   section.skill-box .skill-row {
     flex-flow: column wrap;
     justify-content: center;
-    margin: 40px auto;
+    margin: 60px auto;
   }
-}
-section.skill-box .skill-row:first-of-type {
-  margin: 0 auto 50px auto;
-}
-@media screen and (max-width: 768px) {
-  section.skill-box .skill-row:first-of-type {
-    margin: 0 auto 30px auto;
-  }
-}
-section.skill-box .skill-row:nth-of-type(2) {
-  margin: 50px auto;
-}
-@media screen and (max-width: 768px) {
-  section.skill-box .skill-row:nth-of-type(2) {
-    margin: 50px auto 30px auto;
-  }
-}
-section.skill-box .skill-row:last-of-type {
-  margin: 50px auto 0 auto;
 }
 section.skill-box .skill-row .skill-img {
-  width: 29%;
+  width: 28%;
   display: flex;
   justify-content: center;
 }
@@ -187,7 +168,7 @@ section.skill-box .skill-row .skill-img img {
   }
 }
 section.skill-box .skill-row .skill-contents {
-  width: 69%;
+  width: 68%;
 }
 section.skill-box .skill-row .skill-contents h2 {
   text-align: left;
@@ -196,8 +177,11 @@ section.skill-box .skill-row .skill-contents h2 {
 @media screen and (max-width: 768px) {
   section.skill-box .skill-row .skill-contents h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
   }
+}
+section.skill-box .skill-row .skill-contents p {
+  margin: 30px 0 0 0;
 }
 section.skill-box .skill-row .skill-contents .skill-techs {
   width: 100%;
@@ -220,8 +204,8 @@ section.skill-box .rev {
 }
 
 section.container-projects {
-  width: 90%;
-  margin: 50px auto 0 auto;
+  width: 80%;
+  margin: 80px auto 0 auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
