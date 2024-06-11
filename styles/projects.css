@@ -45,7 +45,7 @@ section.container-projects .previews {
   justify-content: space-between;
   align-content: flex-start;
   align-items: stretch;
-  gap: 150px 0;
+  gap: 80px 0;
 }
 @media screen and (max-width: 576px) {
   section.container-projects .previews {
@@ -168,4 +168,4 @@ section.container-projects .previews .portfolio-project .read-more .card-content
 }
 section.container-projects .previews .portfolio-project .read-more .card-contents ul li {
   font-size: 18px;
-}/*# sourceMappingURL=projects.css.map */
+}/*# sourceMappingURL=projects.css.map *//

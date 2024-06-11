@@ -4,7 +4,14 @@ main { margin: 150px auto;
     .cv { width: 90%; margin: 50px auto 0 auto; min-height: 60vh;
         display: flex; flex-flow: column wrap; justify-content: flex-start; align-items: flex-start;
         @media screen and (max-width: 768px) { width: 90%; }
-        .cv-intro { width: 100%; padding: 0; margin: 0; }
+        .cv-intro { width: 100%; padding: 0; margin: 0; 
+            a.text-link { 
+                @media screen and (max-width: 768px) { 
+                    hyphens: auto; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto;
+                    word-wrap: break-word; overflow-wrap: break-word; 
+                }
+            }
+        }
         h1, h2, h3 { text-align: left; }
         h1, h2 { margin: 0 auto 10px auto; }
         h3 { margin: 30px auto 10px auto; }
@@ -77,7 +84,10 @@ main { margin: 150px auto;
             h2 { font-size: 22px; }
             h3 { font-size: 20px; }
             p, ul, li { font-size: 16px; line-height: 1.6; }
-            .text-link { font-size: 16px; }
+            a.text-link { font-size: 16px; 
+                hyphens: none; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none;
+                word-wrap: normal; overflow-wrap: normal; 
+            }
         }
     }
 }

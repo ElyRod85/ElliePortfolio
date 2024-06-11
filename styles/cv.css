@@ -25,6 +25,16 @@ main .cv .cv-intro {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  main .cv .cv-intro a.text-link {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
 main .cv h1, main .cv h2, main .cv h3 {
   text-align: left;
 }
@@ -180,7 +190,13 @@ main .cv .cv-skills {
     font-size: 16px;
     line-height: 1.6;
   }
-  main .cv .text-link {
+  main .cv a.text-link {
     font-size: 16px;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    word-wrap: normal;
+    overflow-wrap: normal;
   }
 }/*# sourceMappingURL=cv.css.map */
