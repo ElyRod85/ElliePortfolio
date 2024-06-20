@@ -1,6 +1,5 @@
 main { margin: 150px auto;
     @media screen and (max-width: 768px) { margin: 120px auto; }
-
     .cv { width: 90%; margin: 50px auto 0 auto; min-height: 60vh;
         display: flex; flex-flow: column wrap; justify-content: flex-start; align-items: flex-start;
         @media screen and (max-width: 768px) { width: 90%; }
@@ -9,6 +8,7 @@ main { margin: 150px auto;
                 @media screen and (max-width: 768px) { 
                     hyphens: auto; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto;
                     word-wrap: break-word; overflow-wrap: break-word; 
+                    font-size: 18px;
                 }
             }
         }
@@ -21,7 +21,9 @@ main { margin: 150px auto;
         h3 { font-size: 26px;
             @media screen and (max-width: 768px) { font-size: 22px; }
         }
-        p { margin-top: 5px; margin-bottom: 5px; }
+        p { margin-top: 5px; margin-bottom: 5px; font-size: 20px; 
+            @media screen and (max-width: 768px) {  font-size: 18px; }
+        }
         .skills-table { width: 100%; margin: 10px auto;
             display: flex; flex-flow: row wrap; justify-content: space-between; align-items: stretch;
             @media screen and (max-width: 768px) { flex-flow: column wrap; justify-content: center; align-items: center; }
@@ -30,10 +32,10 @@ main { margin: 150px auto;
             }
         }
         .exp { border: 1px solid var(--medium-gray); border-radius: var(--border-radius); padding: 10px 20px; margin: 20px auto; }
-        ul { margin-bottom: 0;
-            @media screen and (max-width: 768px) {  font-size: 16px; }
+        ul { margin-bottom: 0; font-size: 20px;
+            @media screen and (max-width: 768px) {  font-size: 18px; }
             li {
-                
+                font-size: 20px;
                 @media screen and (max-width: 768px) { font-size: 18px; }
             }
         }

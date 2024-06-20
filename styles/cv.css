@@ -25,6 +25,17 @@ main .cv .cv-intro {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  main .cv .cv-intro a.text-link {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 18px;
+  }
+}
 main .cv h1, main .cv h2, main .cv h3 {
   text-align: left;
 }
@@ -54,6 +65,12 @@ main .cv h3 {
 main .cv p {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  main .cv p {
+    font-size: 18px;
+  }
 }
 main .cv .skills-table {
   width: 100%;
@@ -86,11 +103,15 @@ main .cv .exp {
 }
 main .cv ul {
   margin-bottom: 0;
+  font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   main .cv ul {
-    font-size: 16px;
+    font-size: 18px;
   }
+}
+main .cv ul li {
+  font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   main .cv ul li {
@@ -172,18 +193,6 @@ main .cv .cv-skills {
   }
   main .cv h2 {
     font-size: 22px;
-  }
-  main .cv h3 {
-    font-size: 20px;
-  }
-  main .cv p, main .cv ul, main .cv li {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  main .cv .text-link {
-    font-size: 16px;
-  }
-}/*# sourceMappingURL=cv.css.map */t-size: 22px;
   }
   main .cv h3 {
     font-size: 20px;
