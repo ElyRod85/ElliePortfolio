@@ -33,9 +33,9 @@ section.container90 {
 }
 
 section.text-container {
-    width: 80%; margin: 100px auto;
+    width: 80%; margin: 120px auto;
     display: flex; flex-flow: column wrap; justify-content: center; align-content: center;
-    @media screen and (max-width: 1366px) { width: 90%; }
+    @media screen and (max-width: 1366px) { width: 90%; margin: 80px auto; }
     p { font-size: 22px; text-align: center; line-height: 2;
         &:last-of-type { margin-bottom: 0; }
         @media screen and (max-width: 768px) { font-size: 20px; text-align: center; line-height: 1.8; }
