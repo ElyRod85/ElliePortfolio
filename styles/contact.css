@@ -24,13 +24,13 @@ main #contact .contact-form .contact-container {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 @media screen and (max-width: 768px) {
   main #contact .contact-form .contact-container {
     flex-flow: column wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
   }
 }
 main #contact .contact-form .contact-container .contact-img {
@@ -38,7 +38,7 @@ main #contact .contact-form .contact-container .contact-img {
 }
 @media screen and (max-width: 768px) {
   main #contact .contact-form .contact-container .contact-img {
-    width: 100%;
+    display: none;
   }
 }
 main #contact .contact-form .contact-container .contact-img img {
@@ -46,8 +46,7 @@ main #contact .contact-form .contact-container .contact-img img {
 }
 @media screen and (max-width: 768px) {
   main #contact .contact-form .contact-container .contact-img img {
-    max-height: 50vh;
-    width: auto;
+    display: none;
   }
 }
 main #contact .contact-form .contact-container .contact-contents {

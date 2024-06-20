@@ -55,8 +55,8 @@ main .education #accordion-sec p {
   }
 }
 main .education #accordion-sec .accordion-container {
-  width: 47%;
-  margin: 50px auto 0 auto;
+  width: 45%;
+  margin: 70px auto 0 auto;
 }
 @media screen and (max-width: 830px) {
   main .education #accordion-sec .accordion-container {
@@ -68,7 +68,7 @@ main .education #accordion-sec .accordion-container .main-study {
   padding: 20px;
   background-color: var(--yellow);
   border-radius: var(--border-radius);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   position: relative;
 }
 main .education #accordion-sec .accordion-container .main-study h3, main .education #accordion-sec .accordion-container .main-study h4 {
