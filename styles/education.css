@@ -55,6 +55,14 @@ main .education #accordion-sec p {
     align-items: center;
   }
 }
+main .education #accordion-sec hr {
+  margin: 60px auto;
+}
+@media screen and (min-width: 830px) {
+  main .education #accordion-sec hr {
+    display: none;
+  }
+}
 main .education #accordion-sec .accordion-container {
   width: 45%;
   margin: 0 auto;

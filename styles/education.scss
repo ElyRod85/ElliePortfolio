@@ -17,9 +17,15 @@ main { margin: 150px auto;
             h2 { margin: 0 auto 30px auto; font-size: 28px; }
             p { margin-top: 0; margin-bottom: 0; }
             @media screen and (max-width: 830px) { flex-flow: column wrap; justify-content: center; align-items: center; }
+
+            hr { margin: 60px auto;
+                @media screen and (min-width: 830px) { display: none; }
+            }
             
             .accordion-container { width: 45%; margin: 0 auto;
-                @media screen and (max-width: 830px) { width: 100%; }
+                @media screen and (max-width: 830px) { width: 100%; 
+                    
+                }
 
                 .main-study { width: 100%; padding: 20px; background-color: var(--yellow); border-radius: var(--border-radius);
                     margin-bottom: 40px; position: relative;
