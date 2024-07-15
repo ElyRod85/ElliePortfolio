@@ -13,6 +13,7 @@ main .education {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  /* Logo carousel */
 }
 @media screen and (max-width: 830px) {
   main .education {
@@ -56,7 +57,7 @@ main .education #accordion-sec p {
 }
 main .education #accordion-sec .accordion-container {
   width: 45%;
-  margin: 70px auto 0 auto;
+  margin: 0 auto;
 }
 @media screen and (max-width: 830px) {
   main .education #accordion-sec .accordion-container {
@@ -258,4 +259,48 @@ main .education #accordion-sec .accordion-container .accordion-button:not(.colla
 }
 main .education #accordion-sec .accordion-container button.accordion-button:focus {
   box-shadow: inherit;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+main .education .logos {
+  overflow: hidden;
+  padding: 0;
+  margin: 80px auto 90px auto;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+main .education .logos:before,
+main .education .logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+main .education .logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+main .education .logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+main .education .logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+main .education .logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+main .education .logos-slide img {
+  height: 40px;
+  margin: 0 40px;
 }/*# sourceMappingURL=education.css.map */

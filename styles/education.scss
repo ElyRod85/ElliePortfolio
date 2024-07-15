@@ -18,7 +18,7 @@ main { margin: 150px auto;
             p { margin-top: 0; margin-bottom: 0; }
             @media screen and (max-width: 830px) { flex-flow: column wrap; justify-content: center; align-items: center; }
             
-            .accordion-container { width: 45%; margin: 70px auto 0 auto;
+            .accordion-container { width: 45%; margin: 0 auto;
                 @media screen and (max-width: 830px) { width: 100%; }
 
                 .main-study { width: 100%; padding: 20px; background-color: var(--yellow); border-radius: var(--border-radius);
@@ -131,5 +131,33 @@ main { margin: 150px auto;
                 button.accordion-button:focus{ box-shadow: inherit; }
             }
         }
+
+        /* Logo carousel */
+        
+        @keyframes slide {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        
+        .logos {
+            overflow: hidden;
+            padding: 0; margin: 80px auto 90px auto;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+        }
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            width: 250px; height: 100%;
+            content: "";
+            z-index: 2;
+        }
+        .logos:before { left: 0; background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff); }
+        .logos:after { right: 0; background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff); }
+        .logos:hover .logos-slide { animation-play-state: paused; }
+        .logos-slide { display: inline-block; animation: 50s slide infinite linear; }
+        .logos-slide img { height: 40px; margin: 0 40px; }
     }
 }
