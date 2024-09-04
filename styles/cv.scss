@@ -90,6 +90,12 @@ main { margin: 150px auto;
                 hyphens: none; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none;
                 word-wrap: normal; overflow-wrap: normal; 
             }
+            .cv-education {
+                p, ul, li { font-size: 16px; line-height: 1.6; }
+            }
+            .cv-skills {
+                p, ul, li { font-size: 16px; line-height: 1.6; }
+            }
         }
     }
 }

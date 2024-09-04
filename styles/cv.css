@@ -210,4 +210,12 @@ main .cv .cv-skills {
     word-wrap: normal;
     overflow-wrap: normal;
   }
+  main .cv .cv-education p, main .cv .cv-education ul, main .cv .cv-education li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  main .cv .cv-skills p, main .cv .cv-skills ul, main .cv .cv-skills li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }/*# sourceMappingURL=cv.css.map */
