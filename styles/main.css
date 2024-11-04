@@ -186,7 +186,7 @@ section.skill-box .skill-row .skill-contents p {
 }
 section.skill-box .skill-row .skill-contents .skill-techs {
   width: 100%;
-  background-color: var(--yellow);
+  background-color: var(--medium-yellow);
   border-radius: var(--border-radius);
   padding: 10px 20px;
 }

@@ -23,7 +23,7 @@ main { margin: 150px auto;
                     h2.accordion-header { margin: 0; border-radius: var(--border-radius);  
                         button.accordion-button {
                             font-weight: 800; letter-spacing: -1px; font-size: 20px; color: var(--dark-gray);
-                            &:hover { background-color: var(--yellow); color: var(--dark-purple); }
+                            &:hover { background-color: var(--medium-yellow); }
                         }
                         .accordion-button::after {
                             font-family: 'Font Awesome 6 Free';
@@ -40,7 +40,7 @@ main { margin: 150px auto;
                         .details { font-weight: 400; letter-spacing: -0.5; padding: 0 10px; font-size: 20px; 
                             @media screen and (max-width: 792px) { display: none; }
                         }
-                        --bs-accordion-active-bg: var(--yellow);
+                        --bs-accordion-active-bg: var(--medium-yellow);
                         --bs-accordion-btn-bg: var(--white);
                     }
                     .accordion-body {

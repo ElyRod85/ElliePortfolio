@@ -27,7 +27,7 @@ main { margin: 150px auto;
                     
                 }
 
-                .main-study { width: 100%; padding: 20px; background-color: var(--yellow); border-radius: var(--border-radius);
+                .main-study { width: 100%; padding: 20px; background-color: var(--medium-yellow); border-radius: var(--border-radius);
                     margin-bottom: 40px; position: relative;
                     h3, h4 { margin: 0 0 10px 0; text-align: left; }
                     h3 { font-size: 22px; padding: 0 50px 0 0; }
@@ -35,7 +35,7 @@ main { margin: 150px auto;
                     
                     .read-more {
                         
-                        .card-contents { border: 0; margin-top: 20px; padding: 20px; background-color: var(--light-yellow);
+                        .card-contents { border: 0; margin-top: 20px; padding: 20px; background-color: var(--white);
                             i { line-height: 2; font-size: 20px; padding-left: 5px; 
                                 @media screen and (max-width: 830px) { font-size: 18px; }
                             }

@@ -380,7 +380,7 @@ section.container90 {
 
 section.cta-block {
   width: 90%;
-  background-color: var(--yellow);
+  background-color: var(--medium-yellow);
   border-radius: var(--border-radius);
   padding: 50px;
   margin: 50px auto 0 auto;

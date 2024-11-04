@@ -75,7 +75,7 @@ main .education #accordion-sec .accordion-container {
 main .education #accordion-sec .accordion-container .main-study {
   width: 100%;
   padding: 20px;
-  background-color: var(--yellow);
+  background-color: var(--medium-yellow);
   border-radius: var(--border-radius);
   margin-bottom: 40px;
   position: relative;
@@ -96,7 +96,7 @@ main .education #accordion-sec .accordion-container .main-study .read-more .card
   border: 0;
   margin-top: 20px;
   padding: 20px;
-  background-color: var(--light-yellow);
+  background-color: var(--white);
 }
 main .education #accordion-sec .accordion-container .main-study .read-more .card-contents i {
   line-height: 2;
