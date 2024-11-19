@@ -240,7 +240,7 @@ main .work-exp .logos:hover .logos-slide {
 }
 main .work-exp .logos-slide {
   display: inline-block;
-  animation: 45s slide infinite linear;
+  animation: 60s slide infinite linear;
 }
 main .work-exp .logos-slide img {
   height: 40px;

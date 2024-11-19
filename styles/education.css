@@ -306,7 +306,7 @@ main .education .logos:hover .logos-slide {
 }
 main .education .logos-slide {
   display: inline-block;
-  animation: 50s slide infinite linear;
+  animation: 90s slide infinite linear;
 }
 main .education .logos-slide img {
   height: 40px;
