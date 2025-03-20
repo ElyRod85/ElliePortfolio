@@ -11,10 +11,87 @@ main { margin: 150px auto;
             p { margin-top: 10px; }
         }
 
+        #academic-bg {
+            width: 100%; margin: 0 auto 50px auto;
+            h2 { margin: 0 auto 30px auto; font-size: 28px; text-align: center; display: block; }
+
+            .academic-boxes {
+                width: 100%; margin: 0 auto;
+                display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;
+                @media screen and (max-width: 830px) { flex-flow: column wrap; justify-content: center; align-items: center; }
+
+                .box-col { width: 45%; margin: 0 auto;
+                    @media screen and (max-width: 830px) { width: 100%; }
+                    .main-study { width: 100%; padding: 20px; min-height: 180px;
+                        @media screen and (max-width: 1090px) { min-height: 220px; }
+                        @media screen and (max-width: 830px) { min-height: 0; }
+                        background-color: var(--medium-yellow); border-radius: var(--border-radius);
+                        margin-bottom: 40px; position: relative;
+                        h3, h4 { margin: 0 0 10px 0; text-align: left; }
+                        h3 { font-size: 22px; padding: 0 50px 0 0; }
+                        h4 { font-size: 20px; font-weight: 700; }
+                        
+                        .read-more {
+                            
+                            .card-contents { border: 0; margin-top: 20px; padding: 20px; background-color: var(--white);
+                                i { line-height: 2; font-size: 20px; padding-left: 5px; 
+                                    @media screen and (max-width: 830px) { font-size: 18px; }
+                                }
+                                ul { margin-bottom: 0; padding-left: 1.5rem;
+                                    li { font-size: 20px; line-height: 2; 
+                                        @media screen and (max-width: 830px) { font-size: 18px; }
+                                        a { color: var(--purple); 
+                                            &:hover { color: var(--dark-gray); }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .buttons { display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; gap: 10px;
+                            margin: 20px 0 0 0;
+                            button.btn-contents {
+                                text-decoration: none;
+                                line-height: 1.7;
+                                font-weight: 600;
+                                transition: 300ms;
+                                width: fit-content; display: block;
+                                background-color: var(--white); color: var(--dark-gray);
+                                font-size: 16px; 
+                                padding: 8px 15px;
+                                border-radius: var(--border-radius);
+                                border: 1px solid var(--light-gray);
+                                &:hover { text-decoration: none; cursor: pointer; transition: 300ms; color: var(--purple); }
+                            }
+                        }
+                        .ribbon {
+                            --f: 15px; // folded part
+                            --r: 10px; // ribbon shape
+                            --t: 15px; // top offset
+                            
+                            position: absolute;
+                            inset: var(--t) calc(-1*var(--f)) auto auto;
+                            padding: 0 10px var(--f) calc(10px + var(--r));
+                            clip-path: 
+                              polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
+                                calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
+                                var(--r) calc(50% - var(--f)/2));
+                            background: var(--purple);
+                            box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+    
+                            p { font-weight: 600; letter-spacing: 1px; font-size: 16px;
+                                margin: 0; padding: 0; color: var(--white);
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+
         #accordion-sec {
             width: 100%; margin: 0 auto; 
             display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;
-            h2 { margin: 0 auto 30px auto; font-size: 28px; }
+            h2 { margin: 0 auto 30px auto; font-size: 26px; }
             p { margin-top: 0; margin-bottom: 0; }
             @media screen and (max-width: 830px) { flex-flow: column wrap; justify-content: center; align-items: center; }
 
@@ -23,9 +100,7 @@ main { margin: 150px auto;
             }
             
             .accordion-container { width: 45%; margin: 0 auto;
-                @media screen and (max-width: 830px) { width: 100%; 
-                    
-                }
+                @media screen and (max-width: 830px) { width: 100%; }
 
                 .main-study { width: 100%; padding: 20px; background-color: var(--medium-yellow); border-radius: var(--border-radius);
                     margin-bottom: 40px; position: relative;

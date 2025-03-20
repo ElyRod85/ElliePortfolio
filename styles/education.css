@@ -32,6 +32,153 @@ main .education .education-intro h1, main .education .education-intro p {
 main .education .education-intro p {
   margin-top: 10px;
 }
+main .education #academic-bg {
+  width: 100%;
+  margin: 0 auto 50px auto;
+}
+main .education #academic-bg h2 {
+  margin: 0 auto 30px auto;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+}
+main .education #academic-bg .academic-boxes {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 830px) {
+  main .education #academic-bg .academic-boxes {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main .education #academic-bg .academic-boxes .box-col {
+  width: 45%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 830px) {
+  main .education #academic-bg .academic-boxes .box-col {
+    width: 100%;
+  }
+}
+main .education #academic-bg .academic-boxes .box-col .main-study {
+  width: 100%;
+  padding: 20px;
+  min-height: 180px;
+  background-color: var(--medium-yellow);
+  border-radius: var(--border-radius);
+  margin-bottom: 40px;
+  position: relative;
+}
+@media screen and (max-width: 1090px) {
+  main .education #academic-bg .academic-boxes .box-col .main-study {
+    min-height: 220px;
+  }
+}
+@media screen and (max-width: 830px) {
+  main .education #academic-bg .academic-boxes .box-col .main-study {
+    min-height: 0;
+  }
+}
+main .education #academic-bg .academic-boxes .box-col .main-study h3, main .education #academic-bg .academic-boxes .box-col .main-study h4 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+main .education #academic-bg .academic-boxes .box-col .main-study h3 {
+  font-size: 22px;
+  padding: 0 50px 0 0;
+}
+main .education #academic-bg .academic-boxes .box-col .main-study h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents {
+  border: 0;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--white);
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents i {
+  line-height: 2;
+  font-size: 20px;
+  padding-left: 5px;
+}
+@media screen and (max-width: 830px) {
+  main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents i {
+    font-size: 18px;
+  }
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents ul li {
+  font-size: 20px;
+  line-height: 2;
+}
+@media screen and (max-width: 830px) {
+  main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents ul li {
+    font-size: 18px;
+  }
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents ul li a {
+  color: var(--purple);
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .read-more .card-contents ul li a:hover {
+  color: var(--dark-gray);
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 0 0;
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .buttons button.btn-contents {
+  text-decoration: none;
+  line-height: 1.7;
+  font-weight: 600;
+  transition: 300ms;
+  width: fit-content;
+  display: block;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--light-gray);
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .buttons button.btn-contents:hover {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 300ms;
+  color: var(--purple);
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .ribbon {
+  --f: 15px;
+  --r: 10px;
+  --t: 15px;
+  position: absolute;
+  inset: var(--t) calc(-1 * var(--f)) auto auto;
+  padding: 0 10px var(--f) calc(10px + var(--r));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--f)), calc(100% - var(--f)) 100%, calc(100% - var(--f)) calc(100% - var(--f)), 0 calc(100% - var(--f)), var(--r) calc(50% - var(--f) / 2));
+  background: var(--purple);
+  box-shadow: 0 calc(-1 * var(--f)) 0 inset rgba(0, 0, 0, 0.3333333333);
+}
+main .education #academic-bg .academic-boxes .box-col .main-study .ribbon p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
 main .education #accordion-sec {
   width: 100%;
   margin: 0 auto;
@@ -42,7 +189,7 @@ main .education #accordion-sec {
 }
 main .education #accordion-sec h2 {
   margin: 0 auto 30px auto;
-  font-size: 28px;
+  font-size: 26px;
 }
 main .education #accordion-sec p {
   margin-top: 0;
